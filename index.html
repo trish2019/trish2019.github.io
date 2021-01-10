@@ -1,32 +1,46 @@
-<!DOCTYPE html>
-<html>
-  <head> 
-    <meta charset="UTF-8">
-  <style>
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+</style>
 </head>
-
 <body>
-<h1>My Workouts</h1>
-<p>Core Strength and Bodyweight exercises</p>
 
+<h2>My Workouts</h2>
+<h3>Core Strength and Bodyweight exercises</h3>
 <p>3 sets of </p>
-
 <ul>
   <li>Plank 30secs</li>
 </ul>
 
-  <div>
-<iframe width="200" height="150" style="padding:1px;border:2px solid black;" src="https://www.youtube.com/embed/XMxHTNPPgxM">
-</iframe>
-  </div>
+<div class="container"> 
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/XMxHTNPPgxM"></iframe>
+</div>
+
 <ul>
   <li>Right Side Plank 30secs</li>
   <li>Left Side Plank 30secs</li>
 </ul>
 
-<iframe width="200" height="150" src="https://www.youtube.com/embed/K2VljzCC16g">
-</iframe>
+
+<div class="container"> 
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/K2VljzCC16g"></iframe>
+</div>
 
 <ul>
   <li>Sit Ups 8-12</li>
@@ -34,7 +48,5 @@
 </ul>
 
 
-
 </body>
-
 </html>
