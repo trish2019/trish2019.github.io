@@ -27,6 +27,17 @@
 }
 
 
+  
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: blue;
+  padding: 50px;
+  font-size: 20px;
+}  
+
+
 h1 {
   font-size: 4<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -79,6 +90,8 @@ li {
 <body>
 
 <h1>My Workouts</h1>
+  
+ <div class="sticky"></div>
     <h2> StopWatch </h2> 
         <div>Seconds: <span id="time">0</span></div>
         <input type="button" id="startTimer" value="Start Timer" onclick="start();"><br/>
@@ -111,7 +124,7 @@ li {
                 tick()
             }
         </script>
-  
+  </div>
   
   
   
