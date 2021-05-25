@@ -1,118 +1,22 @@
+<!-- Write your HTML in here -->
+<!DOCTYPE html>
 <html>
 <head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-</style>
+	<title>Leo The Cat</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
+	<section id="container">
+		<h1> Welcome to Leo the Cats website</h1>
+		<!-- Source is an attribute it specifies which image to show -->
+		<img src="imgs2/Leo_Bed.jpg">
 
-<h1>My Workouts</h1>
+	    <button>Go To Next Photo</button>
 
-<div class="grid-container">
-  <div class="grid-item">
-  <h2>Warm Up</h2>
-<ul>
-  <li>High Knees 30secs</li>
-  <li>Bodyweight squats 30secs</li>
-  <li>Front Lunges 30secs</li>
-  <li>Shoulder Rotation front and back 30secs</li>
-</ul></div>
-  <div class="grid-item"></div>
-  <div class="grid-item">
-  <h2> StopWatch </h2> 
-        <div>Seconds: <span id="time">0</span></div>
-        <input type="button" id="startTimer" value="Start Timer" onclick="start();"><br/>
-        <input type="button" id="stopTimer" value="Stop Timer"  onclick="stop();"><br/>
-        <input type="button" id="resetTimer" value="Reset Timer"  onclick="reset();"><br/>
-        <script>
-            var timeElapsed = 0;
-            var timerID = -1;
-            function tick() {
-                timeElapsed++
-                document.getElementById("time").innerHTML = timeElapsed;
-            }
+	    <p>He is a British Short Hair and is 8 years old but looks young for his age. </p>
 
-            function start() {
-                if(timerID == -1){
-                    timerID = setInterval(tick, 1000);
-                }
-            }
-
-            function stop() {
-                if(timerID != -1){
-                    clearInterval(timerID)
-                    timerID = -1
-                }
-            }
-
-            function reset() {
-                stop();
-                timeElapsed = -1;
-                tick()
-            }
-        </script>
-  </div>  
-  <div class="grid-item"><h2>Core Strength and Bodyweight exercises</h2>
-<p>3 sets of </p>
-<ul>
-  <li>Plank 30secs</li>
-</ul></div>
-  <div class="grid-item"><div class="container"> 
-  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/XMxHTNPPgxM"></iframe>
-</div></div>
-  <div class="grid-item"><h2> StopWatch </h2> 
-        <div>Seconds: <span id="time">0</span></div>
-        <input type="button" id="startTimer" value="Start Timer" onclick="start();"><br/>
-        <input type="button" id="stopTimer" value="Stop Timer"  onclick="stop();"><br/>
-        <input type="button" id="resetTimer" value="Reset Timer"  onclick="reset();"><br/>
-        <script>
-            var timeElapsed = 0;
-            var timerID = -1;
-            function tick() {
-                timeElapsed++
-                document.getElementById("time").innerHTML = timeElapsed;
-            }
-
-            function start() {
-                if(timerID == -1){
-                    timerID = setInterval(tick, 1000);
-                }
-            }
-
-            function stop() {
-                if(timerID != -1){
-                    clearInterval(timerID)
-                    timerID = -1
-                }
-            }
-
-            function reset() {
-                stop();
-                timeElapsed = -1;
-                tick()
-            }
-        </script>
-  </div>  
-  <div class="grid-item">7</div>
-  <div class="grid-item">8</div>
-  <div class="grid-item">9</div>  
-</div>
-
-<p>Set the <em>display</em> property to <em>grid</em> to make a block-level grid container.</p>
-
-
+   </section>
+   <script type="text/javascript" src=app.js></script>
 </body>
 </html>
+
