@@ -14,8 +14,8 @@ h1 {
 
 body {
 
-	background-color: #f69680;
-	color: #2e1263;
+	background-color: #173241;
+	color: #eefbfb;
 	font-family: "source code pro";
 	font-weight: 200;
 }
@@ -38,11 +38,11 @@ img {
 button {
     margin: 30px auto 0;
     padding: 20px 25px;
-   background-color: #f69680;
-   color: #2e1263;
+   background-color: #173241;
+   color: #eefbfb;
    font-size: 14px;
    text-align: center;
-   border: 1px solid #2e1263;
+   border: 1px solid #eefbfb;
    text-transform: uppercase;
    text-decoration: none;
    letter-spacing: 4px;	
@@ -54,8 +54,8 @@ button {
 
 button:hover {
 	transition: 0.3s;
-   background-color:#2e1263 ;
-   color:#f69680 ;
+   background-color:#eefbfb;
+   color:#173241 ;
    text-decoration: underline;
 }
 
